@@ -1,0 +1,49 @@
+.task {
+    background-color: #F4F2FF;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 1rem;
+    width: 80%;
+    border-radius: 12px;
+}
+
+.task-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.task-description {
+    font-size: 1rem;
+}
+
+.task-delete-btn {
+    padding: 1rem;
+    background-color: rgb(72, 37, 19);
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: #888;
+    background-color: rgb(15 2 78);
+}
+
+.handlers-wrapper {
+    font-family: cursive;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.handlers-wrapper button {
+    background-color: #ECB800;
+    border-style: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.handlers-wrapper input {
+    width: 4%;
+}
