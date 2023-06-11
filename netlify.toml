@@ -1,0 +1,20 @@
+  command = "npm run build" 
+  publish = "client/build"
+
+
+  SERVER_BUILD_PATH = "server/build"
+
+  command = "npm start"
+
+
+  SERVER_DEV_COMMAND = "npm run dev"
+
+
+  from = "/api/*"
+  to = "http://localhost:5000/api/:splat"
+  status = 200
+
+
+  from = "/*" 
+  to = "/index.html"
+  status = 200
