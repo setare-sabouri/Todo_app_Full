@@ -1,12 +1,15 @@
 const express = require("express");
 
 require("dotenv").config();
+const app = express();
 
 const tasksRouter = require("./routes/task.routes");
 const sequelize = require("./models/index");
 
-const app = express();
-const port = 5000;
+const path = require('path')
+app.use(express.static(path.join(__dirname + "/public")))
+
+const port = process.env.PORT || 5000;
 
 const main = async () => {
 	try {
